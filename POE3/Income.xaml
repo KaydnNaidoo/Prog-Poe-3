@@ -1,0 +1,155 @@
+﻿<Window x:Class="POE3.Income"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POE3"
+        mc:Ignorable="d"
+        Title="Income" Height="600" Width="800"
+        Background="Black"
+        WindowStyle="None"
+        ResizeMode="NoResize">
+    <!-- creating Bgrid to work inside-->
+    <Grid Height="550" Width="800"
+          HorizontalAlignment="Center"
+          VerticalAlignment="Top">
+
+        <!-- creating label-->
+        <Label Content="Enter Your Monthly Income Before Deductions"
+               HorizontalAlignment="Left" VerticalAlignment="Center"
+               Foreground="OrangeRed" FontSize="15" FontWeight ="Bold" Margin="0,45,0,425"/>
+        <!-- creating textbox-->
+        <TextBox x:Name="incTB" HorizontalAlignment="Left"
+                 TextWrapping="Wrap"
+                 VerticalAlignment="Center"
+                 Width="100"
+                 Height="20" Margin="351,53,0,427"/>
+        <!-- creating label-->
+        <Label Content="Enter your tax"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Center"
+               Foreground="OrangeRed"
+               FontSize="15"
+               FontWeight="Bold" Margin="7,112,0,357"/>
+        <TextBox x:Name="Tax"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Center"
+                 Width="100"
+                 Height="20" Margin="355,116,0,364"/>
+
+
+        <Grid>
+            <!-- creating label-->
+            <Label Content="Monthly Expenses"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               Foreground="OrangeRed"
+               FontSize="15"
+               FontWeight="Bold" Margin="329,160,283.4,312"/>
+            <!-- creating label-->
+            <Label Content="Groceries"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               Foreground="OrangeRed"
+               FontSize="15" 
+               FontWeight="Bold" Margin="203,211,471.4,261" />
+
+            <!-- creating textbox-->
+            <TextBox x:Name="Groceries"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Center"
+                 Width="100"
+                 Height="20" Margin="387,208,0,272" RenderTransformOrigin="0.469,-1.074"/>
+            <!-- creating label-->
+            <Label Content="Water And Ligths"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               Foreground="OrangeRed"
+               FontSize="15" 
+               FontWeight="Bold" Margin="197,257,420.4,215" />
+
+            <!-- creating textbox-->
+            <TextBox x:Name="WaterAndLights"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Center"
+                 Width="100"
+                 Height="20" Margin="390,261,0,219"/>
+
+            <!-- creating label-->
+            <Label Content="Travel Costs"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               Foreground="OrangeRed"
+               FontSize="15" 
+               FontWeight="Bold" Margin="201,305,454.4,164"  />
+            <!-- creating textbox-->
+            <TextBox x:Name="Travel"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Center"
+                 Width="100"
+                 Height="20" Margin="385,308,0,172" />
+            <!-- creating label-->
+            <Label Content="Cell And telephone "
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               Foreground="OrangeRed"
+               FontSize="15" 
+               FontWeight="Bold" Margin="199,350,407.4,120" />
+            <!-- creating textbox-->
+            <TextBox x:Name="Phone"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Center"
+                 Width="100"
+                 Height="20" Margin="382,359,0,121"  />
+            <!-- creating label-->
+            <Label Content="Other Expenses "
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               Foreground="OrangeRed"
+               FontSize="15" 
+               FontWeight="Bold" Margin="200,397,427.4,74" />
+            <!-- creating textbox-->
+            <TextBox x:Name="Other"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Center"
+                 Width="100"
+                 Height="20" Margin="380,410,0,70"  />
+
+
+            <!-- creating Button-->
+            <Button Height="30" Width="100"
+                Content="Submit"
+                FontSize="20"
+                FontWeight="Bold"
+                Background="Black"
+                Foreground="DarkOrange" Margin="391,458,259,12" Click="IncomeSubmit"/>
+            <!-- creating Button-->
+            <Button Height="30" Width="100"
+                Content="Home"
+                FontSize="20"
+                FontWeight="Bold"
+                Background="Black"
+                Foreground="DarkOrange" Margin="202,456,448,14" Click="Button_Click_2"/>
+            <!-- creating Button-->
+            <Button Height="30"
+                Content="Buy House" 
+                FontSize="20"
+                FontWeight="Bold"
+                Background="Black"
+                Foreground="DarkOrange" Margin="225,517,458,3.4" Click="Button_Click"   />
+            <!-- creating Button-->
+            <Button Height="30"
+                Content="Rent House"
+                FontSize="20"
+                FontWeight="Bold"
+                Background="Black"
+                Foreground="DarkOrange" Margin="410,522,273,-1.6" Click="Button_Click_1" />
+
+
+        </Grid>
+
+
+
+
+    </Grid>
+</Window>

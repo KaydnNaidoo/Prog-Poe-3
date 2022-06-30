@@ -1,0 +1,51 @@
+﻿<Window x:Class="POE3.RentHouse"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POE3"
+        mc:Ignorable="d"
+        Title="RentHouse" Height="607.427" Width="800"
+        Background="Black"
+        WindowStyle="None"
+        ResizeMode="NoResize">
+    <Grid >
+        <!-- creating label-->
+        <Label Content="Enter Your Monthly Rent Amount"
+               HorizontalAlignment="Left" VerticalAlignment="Center"
+               Foreground="OrangeRed" FontSize="15" FontWeight ="Bold" Margin="77,215,0,318"/>
+        <!-- creating textBox-->    
+        <TextBox x:Name="Rent" HorizontalAlignment="Left"
+                 TextWrapping="Wrap"
+                 VerticalAlignment="Center"
+                 Width="100"
+                 Height="20" Margin="413,220,0,323"/>
+
+        <!-- creating Button-->
+        <Button Height="30" Width="100"
+                Content="Home"
+                FontSize="20"
+                FontWeight="Bold"
+                Background="Black"
+                Foreground="DarkOrange" Margin="216,311,484,222" Click="Button_Click"/>
+
+        <!-- creating Button-->
+        <Button Height="30" Width="100"
+                Content="Submit"
+                FontSize="20"
+                FontWeight="Bold"
+                Background="Black"
+                Foreground="DarkOrange" Margin="414,333,286,244.2" Click="RentSubmit"/>
+        <!-- creating Button--> 
+        <Button Height="30" Width="100"
+                Content="Car"
+                FontSize="20"
+                FontWeight="Bold"
+                Background="Black"
+                Foreground="DarkOrange" Margin="306,432,394,145.2" Click="Button_Click_1" />
+
+       
+
+
+    </Grid>
+</Window>

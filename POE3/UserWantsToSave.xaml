@@ -1,0 +1,77 @@
+﻿<Window x:Class="POE3.UserWantsToSave"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POE3"
+        mc:Ignorable="d"
+        Title="UserWantsToSave" Height="600" Width="800"
+        Background="Black"
+        WindowStyle="None"
+        ResizeMode="NoResize">
+    <Grid>
+        <!--Creating Label--> 
+        <Label Content="Enter the amount you wish to save "
+               HorizontalAlignment="Left" VerticalAlignment="Center"
+               Foreground="OrangeRed" FontSize="15" FontWeight ="Bold" Margin="0,45,0,425"/>
+        <!--Creating TextBox--> 
+        <TextBox x:Name="SavingAmt" HorizontalAlignment="Left"
+                 TextWrapping="Wrap"
+                 VerticalAlignment="Center"
+                 Width="100"
+                 Height="20" Margin="351,53,0,427"/>
+        <!--Creating Label-->
+        <Label Content="Enter The Interest Rate"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Center"
+               Foreground="OrangeRed"
+               FontSize="15"
+               FontWeight="Bold" Margin="7,112,0,357"/>
+        <!--Creating TextBox-->
+        <TextBox x:Name="InterestRate"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Center"
+                 Width="100"
+                 Height="20" Margin="355,116,0,364"/>
+
+        <!--Creating Label-->
+        <Label Content="Enter Amount Of Months To Compound" 
+               HorizontalAlignment="Left"
+               VerticalAlignment="Center"
+               Foreground="OrangeRed"
+               FontSize="15"
+               FontWeight="Bold" Margin="4,214,0,305"/>
+        <!--Creating TextBox-->
+            <TextBox x:Name="NumberOfMonths"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Center"
+                 Width="100"
+                 Height="20" Margin="352,207,0,323" />
+
+        <!-- creating buttons-->
+
+            <Button Height="30" Width="100"
+                Content="Calculate"
+                FontSize="20"
+                FontWeight="Bold"
+                Background="Black"
+                Foreground="DarkOrange" Margin="449,406,251,164" Click="Button_Click"  />
+        <!-- creating buttons-->
+        <Button Height="30" Width="100"
+                Content="Home"
+                FontSize="20"
+                FontWeight="Bold"
+                Background="Black"
+                Foreground="DarkOrange" Margin="204,404,496,166" Click="Button_Click_1" />
+        <!-- creating buttons-->
+        <Button Height="30" Width="100"
+                Content="Exit"
+                FontSize="20"
+                FontWeight="Bold"
+                Background="Black"
+                Foreground="DarkOrange" Margin="322,496,378,74" Click="Button_Click_2"  />
+
+
+
+    </Grid>
+</Window> 
